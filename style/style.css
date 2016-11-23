@@ -1,0 +1,211 @@
+body{
+	margin: 0;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	position: relative;
+
+}
+
+header{
+	background-color: #181818;
+	background-image: linear-gradient(to top, #0f0f0f, #181818, #0f0f0f);
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 15%;
+	position: relative;
+}
+
+@media all and (max-width: 481px){
+header{
+	background-color: #181818;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 15%;
+	position: relative;
+}}
+
+@media all and (max-width: 481px){
+.content{
+	background-color: #c5c5c5;
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: relative;
+	border-top: 1px solid #c5c5c5; 
+	border-bottom: 1px solid #c5c5c5; 
+}}
+
+@media all and (max-width: 481px){
+.content__nav-section{
+	width: 87.5%; 
+	position: relative;
+	margin-left: 6.25%;
+	margin-top: 5%;
+}}
+
+@media all and (max-width: 481px){
+.content__nav-section__wrapper{
+	position: relative;
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	padding-bottom: 57.206%; 
+	margin: 5% 0;
+}}
+
+@media all and (max-width: 481px){
+.content__nav-section__text{
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.25em;
+	color: rgb(238, 237, 237);
+	text-transform: uppercase;
+	position: absolute;
+	margin: 3% 6.25%;
+}}
+
+@media all and (max-width: 481px){
+.content__nav-section__wrapper_about{
+	background-image: url("../images/nav-section/wrapper_about_small.jpg");
+}}
+
+
+@media all and (max-width: 481px){
+.content__nav-section__wrapper_services-and-prices{
+	background-image: url("../images/nav-section/wrapper_services-and-prices_small.jpg");
+}}
+
+@media all and (max-width: 481px){
+.content__nav-section__wrapper_advantages{
+	background-image: url("../images/nav-section/wrapper_advantages_small.jpg");
+}}
+
+
+@media all and (max-width: 481px){
+.content__nav-section__wrapper_our-work{
+	background-image: url("../images/nav-section/wrapper_our-work_small.jpg");
+}}
+
+
+@media (max-width: 481px){
+.map
+{
+	background-color: #c5c5c5;
+	width: 100%;
+	height: 68%;
+	top: 0;
+	left: 0;
+	position: relative;
+}}
+
+
+
+@media (min-width: 482px) and (max-width: 801px) {
+.content{
+	background-color: #c5c5c5;
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: relative;
+	border: 1px solid #c5c5c5; 
+	display: flex;
+
+	/*border-bottom: 1px solid #c5c5c5; */
+}}
+
+@media (min-width: 482px) and (max-width: 801px){
+.content__nav-section{
+	width: 100%; 
+	position: relative;
+	/*margin-left: 6.25%;*/
+	/*margin-top: 5%;*/
+	margin: 2.45%;
+	display: flex;
+
+flex-flow: row wrap;
+}}
+
+@media (min-width: 482px) and (max-width: 801px){
+.content__nav-section__wrapper{
+	width: 45%;
+
+	/*position: relative;*/
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	padding-bottom: 22.882%; 
+	/*flex-wrap: wrap;
+	flex-basis: 40%;*/
+	margin: 2.5% 2.5%;
+	/*display: inline-block;*/
+
+}}
+
+@media (min-width: 482px) and (max-width: 801px){
+.content__nav-section__text{
+	font-family: 'Roboto', sans-serif;
+	font-size: 1em;
+	color: rgb(238, 237, 237);
+	text-transform: uppercase;
+	position: absolute;
+	margin: 3% 6.25%;
+}}
+
+@media (min-width: 482px) and (max-width: 801px){
+.content__nav-section__wrapper_about{
+	background-image: url("../images/nav-section/wrapper_about_small.jpg");
+}}
+
+
+@media (min-width: 482px) and (max-width: 801px){
+.content__nav-section__wrapper_services-and-prices{
+	background-image: url("../images/nav-section/wrapper_services-and-prices_small.jpg");
+}}
+
+@media (min-width: 482px) and (max-width: 801px){
+.content__nav-section__wrapper_advantages{
+	background-image: url("../images/nav-section/wrapper_advantages_small.jpg");
+}}
+
+
+@media (min-width: 482px) and (max-width: 801px){
+.content__nav-section__wrapper_our-work{
+	background-image: url("../images/nav-section/wrapper_our-work_small.jpg");
+}}
+
+
+
+@media all and (min-width: 1281px){
+.banner{
+	background-color: #000;
+	background-image: url("../images/banner.jpg");
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	width: 100%;
+	/*Устанавливает резиновый размер блока banner, = высота изображения/ширина изображения*/
+	padding-bottom: 24.5%; 
+	top: 0;
+	left: 0;
+	position: relative;
+}}
+
+
+/*.content{
+	background-color: #c5c5c5;
+	width: 100%;
+	height: 68%;
+	top: 0;
+	left: 0;
+	position: relative;
+}*/
+.map
+{
+	background-color: #c5c5c5;
+	width: 100%;
+	height: 68%;
+	top: 0;
+	left: 0;
+	position: relative;
+}
+
