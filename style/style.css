@@ -90,7 +90,7 @@ header{
 }}
 
 
-@media all (max-width: 481px){
+/*@media all (max-width: 481px){
 .content__map__wrapper
 {
 	background-color: #c5c5c5;
@@ -110,7 +110,7 @@ header{
 	top: 0;
 	left: 0;
 	position: relative;
-}}
+}}*/
 
 
 
@@ -121,6 +121,8 @@ header{
 	top: 0;
 	left: 0;
 	position: relative;
+	/*border: 1px solid #c5c5c5; */
+	/*border-bottom: 1px solid #c5c5c5; */
 	display: flex;
 }}
 
