@@ -28,222 +28,6 @@ header{
 	position: relative;
 }}
 
-@media all and (max-width: 481px){
-.content{
-	background-color: #c5c5c5;
-	width: 100%;
-	top: 0;
-	left: 0;
-	position: relative;
-	display: flex;
-}}
-
-@media all and (max-width: 481px){
-.content__nav-section{
-	width: 100%;
-	position: relative;
-	margin: 2.4%;
-	display: flex;
-	flex-flow: row wrap;
-}}
-
-@media all and (max-width: 481px){
-.content__nav-section__wrapper{
-	width:95%;
-	position: relative;
-	background-repeat: no-repeat;
-	background-size: 100% auto;
-	padding-bottom: 54.345898%; 
-	margin: 2.5%;
-}}
-
-@media all and (max-width: 481px){
-.content__nav-section__text{
-	font-family: 'Roboto', sans-serif;
-	font-size: 1.25em;
-	color: rgb(238, 237, 237);
-	text-transform: uppercase;
-	position: absolute;
-	margin: 2% 6.25%;
-}}
-
-@media all and (max-width: 481px){
-.content__nav-section__wrapper_about{
-	background-image: url("../images/nav-section/wrapper_about_small.jpg");
-}}
-
-
-@media all and (max-width: 481px){
-.content__nav-section__wrapper_services-and-prices{
-	background-image: url("../images/nav-section/wrapper_services-and-prices_small.jpg");
-}}
-
-@media all and (max-width: 481px){
-.content__nav-section__wrapper_advantages{
-	background-image: url("../images/nav-section/wrapper_advantages_small.jpg");
-}}
-
-
-@media all and (max-width: 481px){
-.content__nav-section__wrapper_our-work{
-	background-image: url("../images/nav-section/wrapper_our-work_small.jpg");
-}}
-
-@media all and (max-width: 481px){
-.map{
-	width: 100%;
-	background-color: #c5c5c5;
-/*	background-size: 100% auto;
-	padding-bottom: 60%; */
-	height: 300px;
-	top: 0;
-	left: 0;
-	position: relative;
-}}
-
-
-@media all and (max-width: 481px){
-.map__wrapper{
-	width: 100%;
-	top: 0;
-	left: 0;
-	position: relative;
-}}
-
-@media all and (max-width: 481px){
-.map__wrapper_text{
-	background-image: url("../images/map/map-title-wrapper-small.png");
-	background-repeat: no-repeat;
-	background-size: 100% auto;
-	padding-bottom: 14%;
-	width: 100%;
-	/*height: 100px;*/
-	top: 0;
-	left: 0;
-	position: absolute;
-	z-index: 1;
-}}
-
-@media all and (max-width: 481px){
-.map__text{
-	font-family: 'Roboto', sans-serif;
-	font-size: 1.25em;
-	color: rgb(238, 237, 237);
-	text-transform: uppercase;
-	position: absolute;
-	margin: 2% 11.025%;
-}}
-
-
-
-@media (min-width: 482px) and (max-width: 801px) {
-.content{
-	background-color: #c5c5c5;
-	width: 100%;
-	top: 0;
-	left: 0;
-	position: relative;
-	/*border: 1px solid #c5c5c5; */
-	/*border-bottom: 1px solid #c5c5c5; */
-	display: flex;
-}}
-
-@media (min-width: 482px) and (max-width: 801px){
-.content__nav-section{
-	width: 95%; 
-	position: relative;
-	margin: 2.5%;
-	display: flex;
-	flex-flow: row wrap;
-}}
-
-@media (min-width: 482px) and (max-width: 801px){
-.content__nav-section__wrapper{
-	width: 45%;
-	position: relative;
-	background-repeat: no-repeat;
-	background-size: 100% auto;
-	padding-bottom: 19.97%; 
-	margin: 2.5% 2.5%;
-
-}}
-
-@media (min-width: 482px) and (max-width: 801px){
-.content__nav-section__text{
-	font-family: 'Roboto', sans-serif;
-	font-size: 1em;
-	color: rgb(238, 237, 237);
-	text-transform: uppercase;
-	position: relative;
-	margin: 2% 6.25%;
-}}
-
-@media (min-width: 482px) and (max-width: 801px){
-.content__nav-section__wrapper_about{
-	background-image: url("../images/nav-section/wrapper_about_small.jpg");
-}}
-
-
-@media (min-width: 482px) and (max-width: 801px){
-.content__nav-section__wrapper_services-and-prices{
-	background-image: url("../images/nav-section/wrapper_services-and-prices_small.jpg");
-}}
-
-@media (min-width: 482px) and (max-width: 801px){
-.content__nav-section__wrapper_advantages{
-	background-image: url("../images/nav-section/wrapper_advantages_small.jpg");
-}}
-
-
-@media (min-width: 482px) and (max-width: 801px){
-.content__nav-section__wrapper_our-work{
-	background-image: url("../images/nav-section/wrapper_our-work_small.jpg");
-}}
-
-@media (min-width: 482px) and (max-width: 801px){
-.map{
-	width: 100%;
-	background-color: #c5c5c5;
-/*	background-size: 100% auto;
-	padding-bottom: 60%; */
-	height: 300px;
-	top: 0;
-	left: 0;
-	position: relative;
-}}
-
-
-@media (min-width: 482px) and (max-width: 801px){
-.map__wrapper{
-	width: 100%;
-	top: 0;
-	left: 0;
-	position: relative;
-}}
-
-@media (min-width: 482px) and (max-width: 801px){
-.map__wrapper_text{
-	background-image: url("../images/map/map-title-wrapper-small.png");
-	background-repeat: no-repeat;
-	background-size: 100% auto;
-	padding-bottom: 14%;
-	width: 100%;
-	/*height: 100px;*/
-	top: 0;
-	left: 0;
-	position: absolute;
-	z-index: 1;
-}}
-
-@media (min-width: 482px) and (max-width: 801px){
-.map__text{
-	font-family: 'Roboto', sans-serif;
-	font-size: 1.25em;
-	color: rgb(238, 237, 237);
-	text-transform: uppercase;
-	position: absolute;
-	margin: 2% 11.25%;
-}}
 
 @media all and (min-width: 1281px){
 .banner{
@@ -259,13 +43,171 @@ header{
 	position: relative;
 }}
 
-
-/*.content{
+.content{
 	background-color: #c5c5c5;
 	width: 100%;
-	height: 68%;
 	top: 0;
 	left: 0;
 	position: relative;
-}*/
+	display: flex;
+}
+
+.content__nav-section{
+	width: 95%;
+	position: relative;
+	margin: 2.5%;
+	display: -webkit-flex; 
+	display: flex;
+    -webkit-flex-flow: row wrap; 
+	flex-flow: row wrap;
+}
+
+.content__nav-section__wrapper{
+	position: relative;
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	margin: 2.5%;
+}
+
+@media all and (max-width: 481px){
+.content__nav-section__wrapper{
+	width:95%;
+	padding-bottom: 54.345898%; 
+}}
+
+
+@media (min-width: 482px) and (max-width: 801px){
+.content__nav-section__wrapper{
+	width: 45%;
+	padding-bottom: 25.742%; 
+}}
+
+.content__nav-section__text{
+	font-family: 'Roboto', sans-serif;
+	color: rgb(238, 237, 237);
+	text-transform: uppercase;
+	position: absolute;
+	margin: 2% 6.25%;
+}
+
+@media all and (max-width: 481px){
+.content__nav-section__text{
+	font-size: 20px;
+}}
+
+@media (min-width: 482px) and (max-width: 801px){
+.content__nav-section__text{
+	font-size: 16px;
+}}
+
+@media all and (max-width: 481px){
+.content__nav-section__wrapper_about{
+	background-image: url("../images/nav-section/wrapper_about_small.jpg");
+}}
+
+@media (min-width: 482px) and (max-width: 801px){
+.content__nav-section__wrapper_about{
+	background-image: url("../images/nav-section/wrapper_about_small.jpg");
+}}
+
+@media all and (max-width: 481px){
+.content__nav-section__wrapper_services-and-prices{
+	background-image: url("../images/nav-section/wrapper_services-and-prices_small.jpg");
+}}
+
+@media (min-width: 482px) and (max-width: 801px){
+.content__nav-section__wrapper_services-and-prices{
+	background-image: url("../images/nav-section/wrapper_services-and-prices_small.jpg");
+}}
+
+@media all and (max-width: 481px){
+.content__nav-section__wrapper_advantages{
+	background-image: url("../images/nav-section/wrapper_advantages_small.jpg");
+}}
+
+@media (min-width: 482px) and (max-width: 801px){
+.content__nav-section__wrapper_advantages{
+	background-image: url("../images/nav-section/wrapper_advantages_small.jpg");
+}}
+
+@media all and (max-width: 481px){
+.content__nav-section__wrapper_our-work{
+	background-image: url("../images/nav-section/wrapper_our-work_small.jpg");
+}}
+
+@media (min-width: 482px) and (max-width: 801px){
+.content__nav-section__wrapper_our-work{
+	background-image: url("../images/nav-section/wrapper_our-work_small.jpg");
+}}
+
+.map{
+	width: 100%;
+	background-color: #c5c5c5;
+	top: 0;
+	left: 0;
+	position: relative;
+}
+
+@media all and (max-width: 481px){
+.map{
+	height: 300px;
+}}
+
+
+@media (min-width: 482px) and (max-width: 801px){
+.map{
+	height: 250px;
+}}
+
+.map__wrapper{
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: relative;
+}
+
+.map__wrapper_text{
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	padding-bottom: 14%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: absolute;
+	z-index: 1;
+}
+
+@media all and (max-width: 481px){
+.map__wrapper_text{
+	background-image: url("../images/map/map-title-wrapper-small.png");
+	padding-bottom: 14%;
+}}
+
+@media (min-width: 482px) and (max-width: 801px){
+.map__wrapper_text{
+	background-image: url("../images/map/map-title-wrapper-medium.png");
+	padding-bottom: 6.64%;
+}}
+
+.map__text{
+	font-family: 'Roboto', sans-serif;
+	color: rgb(238, 237, 237);
+	text-transform: uppercase;
+	position: absolute;
+}
+
+@media all and (max-width: 481px){
+.map__text{
+	font-size: 1.25em;
+	margin: 2% 11.025%;
+}}
+
+@media (min-width: 482px) and (max-width: 801px){
+.map__text{
+	font-size: 18px;
+	margin: 0.85% 7.52%;	
+}}
+
+
+
 
