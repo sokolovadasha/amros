@@ -28,23 +28,37 @@ header{
 	position: relative;
 }}
 
-
-@media all and (min-width: 1281px){
 .banner{
 	background-color: #000;
-	background-image: url("../images/banner.jpg");
 	background-size: 100% auto;
 	background-repeat: no-repeat;
 	width: 100%;
-	/*Устанавливает резиновый размер блока banner, = высота изображения/ширина изображения*/
-	padding-bottom: 24.5%; 
 	top: 0;
 	left: 0;
 	position: relative;
+}
+
+@media all and (max-width: 481px){
+.banner{
+	display: none;
+}}
+
+@media all and (min-width: 482px) and (max-width: 1054px){
+.banner{
+	background-image: url("../images/banner_medium.jpg");
+	/*Устанавливает резиновый размер блока banner, = высота изображения/ширина изображения*/
+	padding-bottom: 32.8%; 
+}}
+
+@media all and (min-width: 1055px){
+.banner{
+	background-image: url("../images/banner.jpg");
+	/*Устанавливает резиновый размер блока banner, = высота изображения/ширина изображения*/
+	padding-bottom: 24.5%; 
 }}
 
 .content{
-	background-color: #c5c5c5;
+	background-image: url("../images/concrete_seamless.png");
 	width: 100%;
 	top: 0;
 	left: 0;
@@ -62,6 +76,12 @@ header{
 	flex-flow: row wrap;
 }
 
+@media all and (min-width: 1055px){
+.content__nav-section{
+	width: 95%;
+	margin: 4%;
+}}
+
 .content__nav-section__wrapper{
 	position: relative;
 	background-repeat: no-repeat;
@@ -75,11 +95,17 @@ header{
 	padding-bottom: 54.345898%; 
 }}
 
-
-@media (min-width: 482px) and (max-width: 801px){
+@media (min-width: 482px) and (max-width: 1054px){
 .content__nav-section__wrapper{
 	width: 45%;
 	padding-bottom: 25.742%; 
+}}
+
+@media (min-width: 1055px){
+.content__nav-section__wrapper{
+	width: 46%;
+	padding-bottom: 22.93%; 
+	margin: 2%;
 }}
 
 .content__nav-section__text{
@@ -95,9 +121,14 @@ header{
 	font-size: 20px;
 }}
 
-@media (min-width: 482px) and (max-width: 801px){
+@media (min-width: 482px) and (max-width: 900px){
 .content__nav-section__text{
 	font-size: 16px;
+}}
+
+@media (min-width: 901px) and (max-width: 1281px){
+.content__nav-section__text{
+	font-size: 20px;
 }}
 
 @media all and (max-width: 481px){
@@ -105,7 +136,12 @@ header{
 	background-image: url("../images/nav-section/wrapper_about_small.jpg");
 }}
 
-@media (min-width: 482px) and (max-width: 801px){
+@media all and (min-width: 482px) and (max-width: 900px){
+.content__nav-section__wrapper_about{
+	background-image: url("../images/nav-section/wrapper_about_small.jpg");
+}}
+
+@media all and (min-width: 901px){
 .content__nav-section__wrapper_about{
 	background-image: url("../images/nav-section/wrapper_about_small.jpg");
 }}
@@ -115,7 +151,12 @@ header{
 	background-image: url("../images/nav-section/wrapper_services-and-prices_small.jpg");
 }}
 
-@media (min-width: 482px) and (max-width: 801px){
+@media all and (min-width: 482px) and (max-width: 900px){
+.content__nav-section__wrapper_services-and-prices{
+	background-image: url("../images/nav-section/wrapper_services-and-prices_small.jpg");
+}}
+
+@media all and (min-width: 901px){
 .content__nav-section__wrapper_services-and-prices{
 	background-image: url("../images/nav-section/wrapper_services-and-prices_small.jpg");
 }}
@@ -125,7 +166,12 @@ header{
 	background-image: url("../images/nav-section/wrapper_advantages_small.jpg");
 }}
 
-@media (min-width: 482px) and (max-width: 801px){
+@media all and (min-width: 482px) and (max-width: 900px){
+.content__nav-section__wrapper_advantages{
+	background-image: url("../images/nav-section/wrapper_advantages_small.jpg");
+}}
+
+@media all and (min-width: 901px){
 .content__nav-section__wrapper_advantages{
 	background-image: url("../images/nav-section/wrapper_advantages_small.jpg");
 }}
@@ -135,14 +181,18 @@ header{
 	background-image: url("../images/nav-section/wrapper_our-work_small.jpg");
 }}
 
-@media (min-width: 482px) and (max-width: 801px){
+@media all and (min-width: 482px) and (max-width: 900px){
+.content__nav-section__wrapper_our-work{
+	background-image: url("../images/nav-section/wrapper_our-work_small.jpg");
+}}
+@media all and (min-width: 901px){
 .content__nav-section__wrapper_our-work{
 	background-image: url("../images/nav-section/wrapper_our-work_small.jpg");
 }}
 
 .map{
 	width: 100%;
-	background-color: #c5c5c5;
+	background-image: url("../images/concrete_seamless.png");
 	top: 0;
 	left: 0;
 	position: relative;
@@ -154,9 +204,14 @@ header{
 }}
 
 
-@media (min-width: 482px) and (max-width: 801px){
+@media (min-width: 482px) and (max-width: 900px){
 .map{
-	height: 250px;
+	height: 300px;
+}}
+
+@media (min-width: 901px) and (max-width: 1281px){
+.map{
+	height: 400px;
 }}
 
 .map__wrapper{
@@ -183,7 +238,13 @@ header{
 	padding-bottom: 14%;
 }}
 
-@media (min-width: 482px) and (max-width: 801px){
+@media (min-width: 482px) and (max-width: 900px){
+.map__wrapper_text{
+	background-image: url("../images/map/map-title-wrapper-medium.png");
+	padding-bottom: 6.64%;
+}}
+
+@media (min-width: 901px) and (max-width: 1281px){
 .map__wrapper_text{
 	background-image: url("../images/map/map-title-wrapper-medium.png");
 	padding-bottom: 6.64%;
@@ -198,16 +259,21 @@ header{
 
 @media all and (max-width: 481px){
 .map__text{
-	font-size: 1.25em;
+	font-size: 20px;
 	margin: 2% 11.025%;
 }}
 
-@media (min-width: 482px) and (max-width: 801px){
+@media (min-width: 482px) and (max-width: 900px){
 .map__text{
-	font-size: 18px;
+	font-size: 16px;
 	margin: 0.85% 7.52%;	
 }}
 
+@media (min-width: 901px) and (max-width: 1281px){
+.map__text{
+	font-size: 20px;
+	margin: 0.85% 7.52%;	
+}}
 
 
 
