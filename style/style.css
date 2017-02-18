@@ -1,9 +1,13 @@
+*{
+	box-sizing: border-box;
+}
 body{
 	margin: 0;
 	left: 0;
 	top: 0;
 	height: 100%;
 	width: 100%;
+	min-width: 960px;
 	position: relative;
 	font-family: 'Roboto', sans-serif;
 }
@@ -17,20 +21,17 @@ a{
 .container{ 
 	position: relative;
 	width: 100%;
-	height: 100%;
 }
 
-.fix_center{
+.cf{
 	overflow: hidden;
 	max-width: 960px;
 	margin: 0 auto;
 	position: relative;
-	height: 100%;
 }
 
 /**********************************************************************/
 /********************************header********************************/
-
 header{
 	background-color: #181818;
 	background-image: linear-gradient(to top, #0f0f0f, #181818, #0f0f0f);
@@ -39,26 +40,26 @@ header{
 	width: 100%;
 	height: 123px;
 	position: relative;
-	box-sizing: border-box;
 	display: block;
 }
 
-header .fix_center{
+header .cf{
 	max-width: 1060px;
 }
 
 header .header-content{
 	display: inline-block;
-	/*width: 756px;*/
+	width: 627px;
 	padding: 16px 0 0;
+	float: right;
 }
 
-header .logo{/*
-    width: 304px;*/
-    height: 93px;
-    display: inline-block;
-    padding: 16px;
-    float: left;
+header .logo{
+	width: 333px;
+	/* height: 93px; */
+	display: inline-block;
+	padding: 16px;
+	float: left;
 }
 
 header .contacts{
@@ -68,6 +69,7 @@ header .contacts{
 	font-size: 18px;
 	color: rgb(156, 156, 156);
 	padding-right: 10px;
+	padding-bottom: 6px;
 }
 
 header .contacts .phone{
@@ -91,9 +93,8 @@ header .contacts .schedule{
 
 header nav{
     width: 100%;
-    /*clear: both;*/
-    /*padding: 15px 0 0px 15px;*/
-    box-sizing: border-box;
+    clear: both;
+    display: block;
 }
 
 header nav ul{
@@ -116,17 +117,18 @@ header nav ul:after{
 header nav ul li{
 	display: inline-block;
 	text-transform: uppercase;
-    font-size: 18px;
-    line-height: 30px;
-    padding: 10px;
+	font-size: 16px;
+	line-height: 30px;
+	padding: 10px 8px;
 }
 
-header nav ul li:hover{
+header nav ul li:hover,
+header nav ul li.active{
 	background: rgba(160, 156, 151, 0.28);
 	border-radius: 25px;
 }
 
-@media all and (max-width: 481px){
+/*@media all and (max-width: 481px){
 header{
 	background-color: #181818;
 	left: 0;
@@ -134,7 +136,8 @@ header{
 	width: 100%;
 	height: 15%;
 	position: relative;
-}}
+}}*/
+
 
 /**********************************************************************/
 /********************************banner********************************/
@@ -167,162 +170,100 @@ header{
 	padding-bottom: 24.5%; 
 }}
 /***********************************************************************/
-/********************************content********************************/
-.content{
+/********************************main********************************/
+
+
+main{
 	background-image: url("../images/concrete_seamless.png");
 	width: 100%;
-	top: 0;
-	left: 0;
 	position: relative;
-	display: -webkit-box;
-	display: -moz-flex;
-	display: -webkit-flex;
-	display: -ms-flex;
-	display: flex;
+	display: block;
 }
 
-.content__nav-section{
-	width: 95%;
-	position: relative;
-	margin: 2.5%;
-	display: -webkit-box;
-	display: -moz-flex;
-	display: -webkit-flex;
-	display: -ms-flex;
-	display: flex;
-	-webkit-box-flex: row wrap;
-	-moz-flex-flow: row wrap;
-	-ms-flex: row wrap; 
-    -webkit-flex-flow: row wrap; 
-    -ms-flex: row wrap;
-	flex-flow: row wrap;
+main .menu{
+	padding: 60px 0 30px 0 ; 
 }
 
-@media all and (min-width: 1055px){
-.content__nav-section{
-	width: 95%;
-	margin: 4%;
-}}
-
-.content__nav-section__wrapper{
-	position: relative;
-	background-repeat: no-repeat;
-	background-size: 100% auto;
-	margin: 2.5%;
+main .menu .menu_wrap{
+	font-size: 0;
+	line-height: 0;
+	margin-left: -40px; 
 }
 
-@media all and (max-width: 481px){
-.content__nav-section__wrapper{
-	width:95%;
-	padding-bottom: 54.345898%; 
-}}
+main .menu .item_wrap{
+	/*width: 50%;*/
+	padding-left: 40px;
+	margin-bottom: 20px; 
+	display: inline-block;
+}
 
-@media (min-width: 482px) and (max-width: 1054px){
-.content__nav-section__wrapper{
-	width: 45%;
-	padding-bottom: 25.742%; 
-}}
+main .menu .item{
+	
+}
 
-@media (min-width: 1055px){
-.content__nav-section__wrapper{
-	width: 46%;
-	padding-bottom: 22.93%; 
-	margin: 2%;
-}}
-
-.content__nav-section__text{
-	font-family: 'Roboto', sans-serif;
-	color: rgb(238, 237, 237);
+main .title{
+	background: url("../images/main/title_wrap.png") left top no-repeat;
+	width: 100%;
+	height: 70px;
+	background-size: 100% 70px;
+	font-size: 20px;
+	line-height: 26px;
 	text-transform: uppercase;
-	position: absolute;
-	margin: 2% 6.25%;
+	position: relative;
+	z-index: 3;
+	color: #eeeded;
+	padding: 20px 45px;
 }
 
-@media all and (max-width: 481px){
-.content__nav-section__text{
-	font-size: 20px;
-}}
+main .menu .item .image{
+	width: 100%;
+	height: 100%;
+	max-width: 450px;
+	max-height: 215px;
+	position: relative;
+	z-index: 1;
+	top: -26px;
+	margin-bottom: -26px;
+}
 
-@media (min-width: 482px) and (max-width: 900px){
-.content__nav-section__text{
-	font-size: 16px;
-}}
+main .menu .item .image img{
+	max-width: 450px;
+	max-height: 215px;
+}
 
-@media (min-width: 901px) and (max-width: 1281px){
-.content__nav-section__text{
-	font-size: 20px;
-}}
-
-@media all and (max-width: 481px){
-.content__nav-section__wrapper_about{
-	background-image: url("../images/nav-section/wrapper_about_small.jpg");
-}}
-
-@media all and (min-width: 482px) and (max-width: 900px){
-.content__nav-section__wrapper_about{
-	background-image: url("../images/nav-section/wrapper_about_small.jpg");
-}}
-
-@media all and (min-width: 901px){
-.content__nav-section__wrapper_about{
-	background-image: url("../images/nav-section/wrapper_about_small.jpg");
-}}
-
-@media all and (max-width: 481px){
-.content__nav-section__wrapper_services-and-prices{
-	background-image: url("../images/nav-section/wrapper_services-and-prices_small.jpg");
-}}
-
-@media all and (min-width: 482px) and (max-width: 900px){
-.content__nav-section__wrapper_services-and-prices{
-	background-image: url("../images/nav-section/wrapper_services-and-prices_small.jpg");
-}}
-
-@media all and (min-width: 901px){
-.content__nav-section__wrapper_services-and-prices{
-	background-image: url("../images/nav-section/wrapper_services-and-prices_small.jpg");
-}}
-
-@media all and (max-width: 481px){
-.content__nav-section__wrapper_advantages{
-	background-image: url("../images/nav-section/wrapper_advantages_small.jpg");
-}}
-
-@media all and (min-width: 482px) and (max-width: 900px){
-.content__nav-section__wrapper_advantages{
-	background-image: url("../images/nav-section/wrapper_advantages_small.jpg");
-}}
-
-@media all and (min-width: 901px){
-.content__nav-section__wrapper_advantages{
-	background-image: url("../images/nav-section/wrapper_advantages_small.jpg");
-}}
-
-@media all and (max-width: 481px){
-.content__nav-section__wrapper_our-work{
-	background-image: url("../images/nav-section/wrapper_our-work_small.jpg");
-}}
-
-@media all and (min-width: 482px) and (max-width: 900px){
-.content__nav-section__wrapper_our-work{
-	background-image: url("../images/nav-section/wrapper_our-work_small.jpg");
-}}
-@media all and (min-width: 901px){
-.content__nav-section__wrapper_our-work{
-	background-image: url("../images/nav-section/wrapper_our-work_small.jpg");
-}}
 
 /***********************************************************************/
 /**********************************map**********************************/
 .map{
-	width: 100%;
-	background-image: url("../images/concrete_seamless.png");
-	top: 0;
-	left: 0;
+
+}
+.map_wrap{
+	position: relative;
+    height: 455px;
+    
+}
+
+.map .title{
+	margin-top: -26px;
+	top: 26px;
+	padding: 0;
+}
+
+.map .title a{
+	padding: 20px 45px;
+	display: block;
+	margin: 0 auto;
+	max-width: 960px;
+	overflow: hidden;
 	position: relative;
 }
 
-@media all and (max-width: 481px){
+.map .ymaps-2-1-47-controls__toolbar{
+	margin-top: 35px !important;
+
+}
+
+/*@media all and (max-width: 481px){
 .map{
 	height: 300px;
 }}
@@ -336,69 +277,54 @@ header{
 @media (min-width: 901px) and (max-width: 1281px){
 .map{
 	height: 400px;
-}}
-
-.map__wrapper{
-	width: 100%;
-	top: 0;
-	left: 0;
-	position: relative;
-}
-
-.map__wrapper_text{
-	background-repeat: no-repeat;
-	background-size: 100% auto;
-	padding-bottom: 14%;
-	width: 100%;
-	top: 0;
-	left: 0;
-	position: absolute;
-	z-index: 1;
-}
-
-@media all and (max-width: 481px){
-.map__wrapper_text{
-	background-image: url("../images/map/map-title-wrapper-small.png");
-	padding-bottom: 14%;
-}}
-
-@media (min-width: 482px) and (max-width: 900px){
-.map__wrapper_text{
-	background-image: url("../images/map/map-title-wrapper-medium.png");
-	padding-bottom: 6.64%;
-}}
-
-@media (min-width: 901px) and (max-width: 1281px){
-.map__wrapper_text{
-	background-image: url("../images/map/map-title-wrapper-medium.png");
-	padding-bottom: 6.64%;
-}}
-
-.map__text{
-	font-family: 'Roboto', sans-serif;
-	color: rgb(238, 237, 237);
-	text-transform: uppercase;
-	position: absolute;
-}
-
-@media all and (max-width: 481px){
-.map__text{
-	font-size: 20px;
-	margin: 2% 11.025%;
-}}
-
-@media (min-width: 482px) and (max-width: 900px){
-.map__text{
-	font-size: 16px;
-	margin: 0.85% 7.52%;	
-}}
-
-@media (min-width: 901px) and (max-width: 1281px){
-.map__text{
-	font-size: 20px;
-	margin: 0.85% 7.52%;	
-}}
+}}*/
 
 /***********************************************************************/
 /********************************footer*********************************/
+
+
+footer{
+	padding: 30px 0;
+	-webkit-box-shadow: 0 0 8px rgba(1,1,1,.91), inset 0 0 3px rgba(255,255,255,.06);
+	-moz-box-shadow: 0 0 8px rgba(1,1,1,.91), inset 0 0 3px rgba(255,255,255,.06);
+	box-shadow: 0 0 8px rgba(1,1,1,.91), inset 0 0 3px rgba(255,255,255,.06);
+	background-image: -webkit-linear-gradient(bottom, #181818, rgba(24,24,24,1), #181818);
+	background-image: -moz-linear-gradient(bottom, #181818, rgba(24,24,24,1), #181818);
+	background-image: -o-linear-gradient(bottom, #181818, rgba(24,24,24,1) , #181818);
+	background-image: -ms-linear-gradient(bottom, #181818, rgba(24,24,24,1) , #181818);
+	background-image: linear-gradient(to top, #181818 33%, rgba(30,30,30,1) 66%, #181818);
+}
+
+.footer_wrap .info{
+	display: inline-block;
+    vertical-align: top;
+    float: left;
+	font-size: 18px;
+	line-height: 25px;
+	color: rgb(156, 156, 156);
+	padding-right: 10px;
+	padding-bottom: 6px;
+}
+
+.footer_wrap .info .contacts{
+	display: inline-block;
+	font-weight: bold;
+	padding: 10px 0;
+}
+
+.footer_wrap .info .contacts .phone{
+	margin-right: 5px;
+}
+
+
+.footer_wrap .info .address{
+	display: block;
+	
+}
+.footer_wrap .contacts .company_date{
+	display: block;
+}
+
+
+
 
