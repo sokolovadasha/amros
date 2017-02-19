@@ -24,10 +24,59 @@ a{
 }
 
 .cf{
-	overflow: hidden;
 	max-width: 960px;
 	margin: 0 auto;
 	position: relative;
+}
+
+
+.path{
+	position: relative;
+    font-size: 16px;
+    color: #383331;
+    line-height: 20px;
+    padding: 20px 0;
+}
+
+.path .path-item{
+	position: relative;
+    padding: 0 10px;
+}
+
+.path a{
+	color: #b94d33;
+}
+
+.path a:hover{
+	opacity: 0.8;
+}
+
+.path a:after{
+    content: '';
+    position: absolute;
+    top: 4px;
+    right: -7px;
+    background: url(../images/path_icon.png) center center no-repeat;
+    width: 6px;
+    height: 12px;
+}
+
+h1{
+	font-size: 45px;
+    color: rgb(56, 51, 49);
+    line-height: 50px;
+    font-weight: bold;
+    text-align: center;
+    margin: 30px 0 30px 0;
+}
+
+h2{
+	font-size: 40px;
+    color: rgb(56, 51, 49);
+    line-height: 50px;
+    font-weight: bold;
+    text-align: center;
+    margin: 30px 0 30px 0;
 }
 
 /**********************************************************************/
@@ -67,7 +116,7 @@ header .contacts{
     vertical-align: top;
     float: right;
 	font-size: 18px;
-	color: rgb(156, 156, 156);
+	color: rgb(220, 220, 220);
 	padding-right: 10px;
 	padding-bottom: 6px;
 }
@@ -195,11 +244,24 @@ main .menu .item_wrap{
 	padding-left: 40px;
 	margin-bottom: 20px; 
 	display: inline-block;
+	vertical-align: top;
 }
 
 main .menu .item{
-	
+	position: relative;
 }
+
+/*main .menu .item:hover:after{
+	content: '';
+	background: url("../images/main/title_wrap_hover_down.png") left top no-repeat;
+	width: 100%;
+	height: 70px;
+	background-size: 100% 70px;
+	position: absolute;
+	bottom: 46px;
+	left: 0;
+	z-index: 3;
+}*/
 
 main .title{
 	background: url("../images/main/title_wrap.png") left top no-repeat;
@@ -215,6 +277,22 @@ main .title{
 	padding: 20px 45px;
 }
 
+main .item:hover .title{
+	color:#9a9292;;
+}
+
+
+main .title a{
+
+}
+
+main .title a:after{
+	content: '';
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
 main .menu .item .image{
 	width: 100%;
 	height: 100%;
@@ -226,9 +304,42 @@ main .menu .item .image{
 	margin-bottom: -26px;
 }
 
+
+/*main .menu .item:hover .image{
+	top: -46px;
+	margin-bottom: -46px;
+}*/
+
+main .menu .item:hover .image:after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(30, 27, 27, 0.6);
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+
 main .menu .item .image img{
 	max-width: 450px;
 	max-height: 215px;
+}
+
+
+main .menu .item > a{
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 4;
+	margin-bottom: -26px;
 }
 
 
@@ -298,11 +409,10 @@ footer{
 .footer_wrap .info{
 	display: inline-block;
     vertical-align: top;
-    float: left;
 	font-size: 18px;
 	line-height: 25px;
-	color: rgb(156, 156, 156);
-	padding-right: 10px;
+	color: rgb(220, 220, 220);
+	padding: 0 10px;
 	padding-bottom: 6px;
 }
 
@@ -325,6 +435,24 @@ footer{
 	display: block;
 }
 
+.h1 h1,
+.h2 h2{
+	margin: 40px 0;
+}
+
+.h1 .text p,
+.h2 .text p{
+	margin: 20px 0;
+    font-size: 16px;
+    text-align: left;
+    color: rgb(56, 51, 49);
+    line-height: 25px;
+}
+
+.h1 .text,
+.h2 .text{
+    min-height: 190px;
+}
 
 
 
