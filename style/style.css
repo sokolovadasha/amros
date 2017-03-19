@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+
 *{
 	box-sizing: border-box;
 }
@@ -7,9 +9,11 @@ body{
 	top: 0;
 	height: 100%;
 	width: 100%;
-	min-width: 960px;
+	min-width: 980px;
 	position: relative;
 	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+    line-height: 24px;
 }
 
 
@@ -87,7 +91,7 @@ header{
 	left: 0;
 	top: 0;
 	width: 100%;
-	height: 123px;
+	height: 130px;
 	position: relative;
 	display: block;
 }
@@ -154,6 +158,7 @@ header nav ul{
     line-height: 0px;
     font-size: 0;
     width: 100%;
+    margin: 0;
 }
 
 header nav ul:after{
@@ -341,6 +346,187 @@ main .menu .item > a{
 	z-index: 4;
 	margin-bottom: -26px;
 }
+
+/*************************price**************************/
+.price{
+	margin: 20px 0;
+}
+
+.price h2{
+	text-align: left;
+    margin: 20px 0;
+}
+
+
+/*********************contacts_page***********************/
+
+main .contacts_page{
+	margin: 20px 0;
+}
+
+main .contacts_page .info{
+	display: inline-block;
+    vertical-align: top;
+	font-size: 18px;
+	line-height: 25px;
+	color: rgb(56, 51, 49);
+}
+main .contacts_page .info .item{
+	margin: 10px 0 20px 0;
+}
+
+main .contacts_page .info .item_header{
+	display: block;
+	font-size: 28px;
+	line-height: 36px;
+	font-weight: 500;
+	margin: 10px 0;
+}
+
+main .contacts_page .info .item_content{
+	display: block;
+}
+
+main .contacts_page .info .contacts{
+	display: inline-block;
+}
+main .contacts_page .info .contacts .number{
+	font-weight: bold;
+}
+
+main .contacts_page .info .item .item{
+	margin: 0 0 5px 0;
+	display: block;
+}
+
+/*************************text_page****************************/
+
+
+p{
+	font-size: 14px;
+    line-height: 22px;
+    margin: 15px 0;
+    color: #010101;
+}
+
+p a{
+	color: #749b41;
+	text-decoration: underline;
+}
+
+p a:hover{
+	opacity: 0.8;
+	text-decoration: none;
+}
+
+ul{
+	margin: 15px 0;
+	padding: 0 0 0 30px;
+}
+
+.with_marker li{
+	list-style-type: none;
+	position: relative;
+}
+
+.with_marker li:after{
+	content: '';
+    /*background: url(../images/with_marker.png) center center no-repeat;*/
+	position: absolute;
+    top: 8px;
+    left: -17px;
+    width: 6px;
+    border-radius: 3px;
+    height: 6px;
+    background: #4c1919;
+}
+
+table{
+	border-collapse: collapse;
+	margin: 15px 0;
+}
+
+table td, table th{
+	
+}
+
+.nice_table{
+	width: 100%;
+    overflow: hidden;
+}
+
+.nice_table tr{
+	width: 100%;
+}
+
+.nice_table th:first-child {
+	-moz-border-radius: 10px 0 0 0;
+	-webkit-border-radius: 10px 0 0 0;
+	border-radius: 10px 0 0 0;
+}
+
+
+.nice_table th:last-child {
+	-moz-border-radius: 0 10px 0 0;
+	-webkit-border-radius: 0 10px 0 0;
+	border-radius: 0 10px 0 0;
+}
+
+.nice_table tr:last-child td:first-child {
+	-moz-border-radius: 0 0 0 10px;
+	-webkit-border-radius: 0 0 0 10px;
+	border-radius: 0 0 0 10px;
+}
+
+.nice_table tr:last-child td:last-child {
+	-moz-border-radius: 0 0 10px 0;
+	-webkit-border-radius: 0 0 10px 0;
+	border-radius: 0 0 10px 0;
+
+}
+
+.nice_table tr:nth-child(odd) td{
+  background-color: #e2dada;
+}
+
+.nice_table tr:nth-child(even) td{
+  background-color: #e4e2e2;
+}
+
+.nice_table tr th,
+.nice_table tr td{
+	color: #353535;
+	max-width: 200px;
+	border: none;
+	text-align: center;
+}
+
+.nice_table tr th{
+	color: #fff;
+	background: #be3e3d;
+	font-weight: 500;
+	padding: 15px 10px;
+	font-size: 110%;
+}
+
+.nice_table tr td{
+	padding: 10px;
+}
+
+.description{
+	font-size: 15px;
+	line-height: 22px;
+	color: #524242;
+}
+
+table.noborder, table.noborder td, table.noborder th,
+table[border="0"], table[border="0"] td, table[border="0"] th{
+	border: none;
+}
+table.cellpadding_5 td, table.cellpadding_5 th{padding: 5px;}
+table.cellpadding_7 td, table.cellpadding_7 th{padding: 7px;}
+table.cellpadding_10 td, table.cellpadding_10 th{padding: 10px;}
+table.cellpadding_15 td, table.cellpadding_15 th{padding: 15px;}
 
 
 /***********************************************************************/
