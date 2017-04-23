@@ -21,5 +21,5 @@ window.onresize = resize;
 
 function resize(){
  windowWidth = window.innerWidth;
- $('footer .map iframe').css({'width': $('footer .map').width() + ((windowWidth - 960)/2) });
+ $('.map iframe').css({'width': $('.map').width()});
 }
